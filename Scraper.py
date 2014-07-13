@@ -23,8 +23,8 @@ def get_raw_html(r_link):
 #extract the list of URL links to actual listings.
 
 
-def get_listing_urls(rawHtml):
-    soup = BeautifulSoup(str(rawHtml))
+def get_listing_urls(sURL):
+    soup = BeautifulSoup(get_raw_html(str(sURL)))
     for a in soup.findAll('a',href=True):
         if re.findall('/listing/', a['href']):
             print "http://www.boattrader.com" + a['href']
