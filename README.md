@@ -1,4 +1,4 @@
-Statricks-Data-Collection-with-Python
+Data-Collection-with-Python
 =====================================
 
 building a web scraper for Statricks, a project at TeamLeada
